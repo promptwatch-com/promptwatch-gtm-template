@@ -1,0 +1,5 @@
+homepage: "https://www.promptwatch.com"
+documentation: "https://promptwatch.com/academy/visitor-analytics"
+versions:
+  - sha: 123
+    changeNotes: Initial release.
