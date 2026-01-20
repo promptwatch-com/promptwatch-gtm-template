@@ -1,5 +1,5 @@
 homepage: "https://www.promptwatch.com"
 documentation: "https://promptwatch.com/academy/visitor-analytics"
 versions:
-  - sha: 1bc2a257148c8dbe633c9d9417cb1ac5888e18f2
+  - sha: 72be03a98b3873f3a7ee6b13165900d373b45aec
     changeNotes: Initial release.
