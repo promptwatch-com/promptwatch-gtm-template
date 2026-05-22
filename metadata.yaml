@@ -1,5 +1,7 @@
 homepage: "https://www.promptwatch.com"
 documentation: "https://promptwatch.com/academy/visitor-analytics"
 versions:
+  - sha: 54dace7930396d1c973b482ecf20b449e47a2c85
+    changeNotes: Fix config variable name (promptwatchConfig -> pwcConfig).
   - sha: 72be03a98b3873f3a7ee6b13165900d373b45aec
     changeNotes: Initial release.
