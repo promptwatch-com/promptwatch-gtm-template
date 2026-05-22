@@ -51,9 +51,9 @@ const config = {
   projectId: data.projectId
 };
 
-const existingConfig = copyFromWindow('promptwatchConfig');
+const existingConfig = copyFromWindow('pwcConfig');
 if (!existingConfig) {
-  setInWindow('promptwatchConfig', config, false);
+  setInWindow('pwcConfig', config, false);
 }
 
 injectScript(scriptUrl, data.gtmOnSuccess, data.gtmOnFailure, scriptUrl);
@@ -97,7 +97,7 @@ ___WEB_PERMISSIONS___
                 "mapValue": [
                   {
                     "type": 1,
-                    "string": "promptwatchConfig"
+                    "string": "pwcConfig"
                   },
                   {
                     "type": 8,
@@ -163,7 +163,7 @@ scenarios:
 
     runCode(mockData);
 
-    assertApi('setInWindow').wasCalledWith('promptwatchConfig', {
+    assertApi('setInWindow').wasCalledWith('pwcConfig', {
       projectId: 'test-project-123'
     }, false);
 
@@ -171,7 +171,7 @@ scenarios:
 - name: Does not overwrite existing config
   code: |-
     mock('copyFromWindow', function(key) {
-      if (key === 'promptwatchConfig') {
+      if (key === 'pwcConfig') {
         return { projectId: 'existing-project' };
       }
       return undefined;
